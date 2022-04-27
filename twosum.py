@@ -9,7 +9,7 @@ def solution(nums, target):
     for index, num in enumerate(nums):
         remaining = target - num
         if remaining in values:
-            print([index, values[remaining]])
+            return[index, values[remaining]]
         values[num] = index
 
 solution([3,2,4], 6)
